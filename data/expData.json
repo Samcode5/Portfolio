@@ -1,0 +1,26 @@
+[
+    {
+        "company":"Zensar",
+        "companyImage":"zensar.jpg",
+        "title":"Software Developer",
+        "tech":["js.png","cHash.png"],
+        "date":"June 2024-Present",
+        "details":["Developed front-end features for igaming industry and optimizing user experience."
+         ,"Building a secure, locally deployed AI chatbot for Zensar"
+        ,"Automated multi-file setups to boost team efficiency and reduce manual effort"
+        ]
+    },
+
+    {
+        "company":"Unique School",
+        "companyImage":"us.png",
+        "title":"Mobile application intern",
+        "tech":["js.png","react.png"],
+        "date":"April 2024 -June 2024",
+        "details": [
+            "Contributed to developing a mobile application for school management using React Native.",
+            "Translated Figma designs into responsive and functional UI components.",
+            "Collaborated with the team to ensure smooth user experience across Android and iOS devices."
+          ]
+    }
+]

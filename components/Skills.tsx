@@ -6,6 +6,19 @@ import Skill from './Skill'
 type Props = {}
 
 function Skills({}: Props) {
+  const skills = [
+    { image: "HTML5.png", level: 4 },
+    { image: "CSS3.png", level: 4 },
+    { image: "js.png", level: 5 },
+    { image: "react.png", level: 4 },
+    { image: "Tailwind.png", level: 4 },
+    { image: "Git.png", level: 4 },
+    { image: "MySQL.png", level: 4 },
+    { image: "node.png", level: 3 },
+    { image: "C++.png", level: 4 },
+    { image: "cHash.png", level: 3 },
+    { image: "python.png", level: 3 },
+  ];  
   return (
     <motion.div 
     initial={{opacity:0}}
@@ -16,15 +29,11 @@ function Skills({}: Props) {
       Skills
     </h3>
     <div className='grid grid-cols-4 gap-5 mt-5'>
-      <Skill/>
-      <Skill/>
-      <Skill/>
-      <Skill/>
-      <Skill/>
-      <Skill/>
-      <Skill/>
-      <Skill/>
-      <Skill/>
+      {
+        skills.map((skill,idx)=>(
+          <Skill key={idx} image={skill.image} level={skill.level}/>
+        ))
+      }
     </div>
     </motion.div>
   )

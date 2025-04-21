@@ -1,0 +1,19 @@
+[
+    {
+    
+        "Image":"arrivalAid.png",
+        "title":"An Integrated Approach to Immigrant Housing Search using K-Means Clustering and NLP",
+        "details":["A user-driven accommodation system, classifying based on preferences to optimize choice",
+        "Successfully implemented and displayed the locations on website using Reactjs and tailwindCSS."
+        ]
+    },
+    {
+    
+        "Image":"parkit.png",
+        "title":"Parkit : Smart parking application",
+        "details":["Successfully implemented the project and were able to achieved Parking space allocation and management of parking spaces.",
+        "Integrated with google maps for navigation.",
+        "The tech stack we used to develop this project are React Native , Redux, Computer vision, CNN, ,MongoDB"
+        ]
+    }
+]

@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
+import experienceData from "../data/expData.json"
+
 
 type Props = {}
 
@@ -11,9 +13,12 @@ function Experience({}: Props) {
             Experience
         </h1>
         <div className='w-full flex space-x-5 overflow-x-scroll p-8 snap-x snap-mandatory mt-32 md:mt-40 xl:mt-52 '>
-            <ExperienceCard/>
-            <ExperienceCard/>
-            <ExperienceCard/>
+          {
+            experienceData.map((data,id)=>(
+              <ExperienceCard key={id} {...data}/>
+            ))
+
+          }
         </div>
     </div>
   )
