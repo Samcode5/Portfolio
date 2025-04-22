@@ -5,9 +5,9 @@ import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 
 
-type Props = {}
 
-export default function Hero({}: Props) {
+
+export default function Hero() {
     const [text]=useTypewriter({
         words:["Hi,The Name's [Gautam,Sameer] Mudawadkar","Yeah,I have two Names","Guy who loves Acting","<ButLovesToCodeMore/>"],
         loop:true,

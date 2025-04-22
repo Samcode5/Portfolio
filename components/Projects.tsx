@@ -3,10 +3,9 @@ import React from 'react'
 import {motion} from "framer-motion";
 import projects from "../public/data/projectData.json"
 
-type Props = {
-}
 
-function Projects({}: Props) {
+
+function Projects() {
   return (
     <div className=' relative h-screen flex flex-col justify-evenly overflow-hidden
      items-center text-center md:flex-row max-w-full z-0'>

@@ -2,10 +2,9 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import {motion} from "framer-motion";
-import Link from "next/link";
 
-type Props ={}
-export default function Header({}:Props){
+
+export default function Header(){
     return(
         <header className="sticky top-0 p-5 flex flex-row items-start justify-between max-w-7xl z-20 mx-auto">
         <motion.div

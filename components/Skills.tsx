@@ -3,9 +3,9 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import Skill from './Skill'
 
-type Props = {}
 
-function Skills({}: Props) {
+
+function Skills() {
   const skills = [
     { image: "HTML5.png", level: 4 },
     { image: "CSS3.png", level: 4 },

@@ -2,15 +2,9 @@
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/16/solid'
 import React, { ReactEventHandler, useState } from 'react'
 
-type Inputs={
-    name:String,
-    email:String,
-    subject:String,
-    message:String
-}
-type Props = {}
 
-function Contact({}: Props) {
+
+function Contact() {
 const [data,setData]=useState({Name:'',Email:'',Subject:'',Message:''});
 const handleChange=(e:any)=>{
     e.preventDefault();
