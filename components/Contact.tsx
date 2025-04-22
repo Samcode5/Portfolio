@@ -1,6 +1,6 @@
 "use client"
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/16/solid'
-import React, { ReactEventHandler, useState } from 'react'
+import React, {useState } from 'react'
 
 
 
