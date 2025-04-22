@@ -32,14 +32,14 @@ export default function ExperienceCard({ title,
         <div className='flex space-x-2 my-2'>
           { 
           tech.map((data,idx)=>(
-          <img src={data}  className='h-[32px] w-[32px]'/>
+          <img key={idx} src={data}  className='h-[32px] w-[32px]'/>
           ))
           }
         </div>
         <p className='uppercase py-5 text-gray-300 tracking-[5px]'>{date}</p>
         <ul className='list-disc space-y-2 text-lg'>
           {details.map((detail,idx)=>(
-            <li>{detail}</li>
+            <li key={idx}>{detail}</li>
           ))}
         </ul>
         

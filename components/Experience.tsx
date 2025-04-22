@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
-import experienceData from "../data/expData.json"
+import experienceData from "../public/data/expData.json"
 
 
 type Props = {}

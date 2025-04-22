@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import {motion} from "framer-motion";
-import projects from "../data/projectData.json"
+import projects from "../public/data/projectData.json"
 
 type Props = {
 }
@@ -15,7 +15,7 @@ function Projects({}: Props) {
     </h3>
     <div className=' relative  w-full flex overflow-x-scroll  overflow-y-hidden snap-x snap-mandatory z-20'>
      {projects.map((project,idx) =>(
-        <div className='w-screen flex-shrink-0 snap-center flex flex-col 
+        <div key={idx} className='w-screen flex-shrink-0 snap-center flex flex-col 
         space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
          <motion.img 
           initial={{y:-200}}
@@ -26,7 +26,7 @@ function Projects({}: Props) {
             <h4 className='font-semibold text-xl'>{project.title} </h4>
              <ul className='list-disc space-y-2 text-left'>
                {project.details.map((data,idx)=>(
-                   <li>{data}</li>
+                   <li key={idx}>{data}</li>
                ))}               
              </ul>
         </div>
