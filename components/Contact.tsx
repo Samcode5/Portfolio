@@ -6,14 +6,14 @@ import React, { ReactEventHandler, useState } from 'react'
 
 function Contact() {
 const [data,setData]=useState({Name:'',Email:'',Subject:'',Message:''});
-const handleChange=(e:any)=>{
+const handleChange=(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>)=>{
     e.preventDefault();
      const {name,value}=e.target;
      setData({...data,[name]:value})
  }
- const handleSubmit=(e:ReactEventHandler | any)=>{
+ const handleSubmit=(e: React.FormEvent)=>{
     e.preventDefault();
-    window.location.href=`mailto:sameermudawadkar2@gmail.com?subject=${e.Email}&body=Hi,My Name is ${e.Name}.${e.Message}`
+    window.location.href=`mailto:sameermudawadkar2@gmail.com?subject=${data.Email}&body=Hi,My Name is ${data.Name}.${data.Message}`
  }
   return (
     <div className='relative h-screen flex flex-col justify-evenly overflow-hidden
@@ -24,7 +24,7 @@ const handleChange=(e:any)=>{
    <div className='flex flex-col space-y-5 items-center'>
     <div className='flex flex-col items-center space-y-5'>
     <h2 className='text-2xl font-bold text-center w-screen lg:mt-30'>I have got just what you need.
-    <span className='underline'>Let's Talk.</span>
+    <span className='underline'>Let&apos;s Talk.</span>
     </h2>
     <div className='flex items-center'>
     <PhoneIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
