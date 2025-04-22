@@ -15,5 +15,14 @@
         "Integrated with google maps for navigation.",
         "The tech stack we used to develop this project are React Native , Redux, Computer vision, CNN, ,MongoDB"
         ]
+    },
+    {
+    
+        "Image":"os.jpg",
+        "title":"Psuedo Operating system",
+        "details":["Successfully created a functional operating system model which process basic functionalities using C++"
+        ]
     }
+
+
 ]
