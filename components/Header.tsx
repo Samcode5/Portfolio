@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 
 export default function Header(){
     return(
-        <header className="sticky top-0 p-5 flex flex-row items-start justify-between max-w-7xl z-20 mx-auto">
+        <header className="sticky top-0 p-5 flex flex-row items-start justify-between max-w-7xl z-20 mx-auto my-auto">
         <motion.div
             initial={{ x: -500, scale: 0.5, opacity: 0 }}
             animate={{ x: 0, scale: 1, opacity: 1 }}
