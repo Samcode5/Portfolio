@@ -18,7 +18,7 @@ const handleChange=(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   return (
     <div className='relative h-screen flex flex-col justify-evenly overflow-hidden
     items-center text-center md:flex-row max-w-full'>
-    <h3 className='md:absolute relative top-24 mb-5 text-2xl font-semibold tracking-[15px] text-gray-500 uppercase'>
+    <h3 className='md:absolute relative top-20 m-5 text-2xl font-semibold tracking-[15px] text-gray-500 uppercase'>
        Contact 
    </h3>
    <div className='flex flex-col space-y-5 items-center'>
