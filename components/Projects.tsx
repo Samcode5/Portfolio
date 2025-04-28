@@ -21,7 +21,7 @@ function Projects() {
           transition={{duration:1.2}}
           whileInView={{y:0}}
           viewport={{once:true}}
-             src={project.Image} className='h-60 w-90'/>
+             src={project.Image} className='md:h-60 md:w-90 h-30 w-45'/>
             <h4 className='font-semibold text-xl'>{project.title} </h4>
              <ul className='list-disc space-y-2 text-left'>
                {project.details.map((data,idx)=>(

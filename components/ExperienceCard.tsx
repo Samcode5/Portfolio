@@ -18,7 +18,7 @@ export default function ExperienceCard({ title,
   details,
   companyImage}: Props) {
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 max-w-screen
+    <article className='flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 max-w-screen
      md:w-[600px] xl:w-[900px] xl:h-auto snap-center bg-[#292929] p-10 xl:hover:opacity-100 xl:opacity-40 cursor-pointer transition-opacity duration-200'>
         <motion.img src={companyImage}
         initial={{y:-100,opacity:0}}
