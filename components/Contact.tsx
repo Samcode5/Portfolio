@@ -35,8 +35,8 @@ const handleChange=(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     <p>+917588119489</p>
     </div>
     </div>
-    <form onSubmit={(e)=>handleSubmit(e)}  className='flex flex-col space-y-2 mx-5'>
-    <div className='flex space-x-2'>
+    <form onSubmit={(e)=>handleSubmit(e)}  className='flex flex-col space-y-2 mx-5 justify-center'>
+    <div className='md:flex-row md:space-x-2 gap-1 flex flex-col'>
       <input type="text" name="Name" placeholder='Name' onChange={(e)=> handleChange(e)} className="contactInput"/>
       <input type="email" name="Email" placeholder='Email' onChange={(e)=> handleChange(e)} className="contactInput"/>
       </div>

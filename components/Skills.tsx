@@ -7,17 +7,17 @@ import Skill from './Skill'
 
 function Skills() {
   const skills = [
-    { image: "HTML5.png", level: 4 },
-    { image: "CSS3.png", level: 4 },
-    { image: "js.png", level: 5 },
-    { image: "react.png", level: 4 },
-    { image: "Tailwind.png", level: 4 },
-    { image: "Git.png", level: 4 },
-    { image: "MySQL.png", level: 4 },
-    { image: "node.png", level: 3 },
-    { image: "C++.png", level: 4 },
-    { image: "cHash.png", level: 3 },
-    { image: "python.png", level: 3 },
+    { image: "HTML5.png", level: 4 ,directionLeft:true},
+    { image: "CSS3.png", level: 4,directionLeft:true},
+    { image: "js.png", level: 5,directionLeft:false },
+    { image: "react.png", level: 4 ,directionLeft:false},
+    { image: "Tailwind.png", level: 4 ,directionLeft:true},
+    { image: "Git.png", level: 4 ,directionLeft:true},
+    { image: "MySQL.png", level: 4 ,directionLeft:false},
+    { image: "node.png", level: 3,directionLeft:false },
+    { image: "C++.png", level: 4 ,directionLeft:true},
+    { image: "cHash.png", level: 3 ,directionLeft:true},
+    { image: "python.png", level: 3 ,directionLeft:false},
   ];  
   return (
     <motion.div 
@@ -31,7 +31,7 @@ function Skills() {
     <div className='grid grid-cols-4 gap-5 mt-5'>
       {
         skills.map((skill,idx)=>(
-          <Skill key={idx} image={skill.image} level={skill.level}/>
+          <Skill key={idx} image={skill.image} level={skill.level} directionLeft={skill.directionLeft}/>
         ))
       }
     </div>
