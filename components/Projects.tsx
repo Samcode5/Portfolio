@@ -10,7 +10,8 @@ import { ArrowLeftIcon } from '@heroicons/react/16/solid';
 
 function Projects() {
   const [activeIndex,setActiveIndex]=useState(0);
-  const scrollRef=useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
 
   const handleScroll =()=>{
     const scrollX=scrollRef.current?.scrollLeft;
