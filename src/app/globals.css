@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 
+@theme {
+    --font-poppins:Manrope;
+  }
+
 @layer components{
     .heroButton{
         @apply px-6 py-2 uppercase text-gray-500 text-xs tracking-widest border rounded-full border-[#242424]

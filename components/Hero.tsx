@@ -19,7 +19,7 @@ export default function Hero() {
       <img src="/me.jpeg" alt="My Image" className='relative h-32 w-32 rounded-full mx-auto object-cover'/>
       <div className='z-20'>
         <h2 className='uppercase text-gray-500 tracking-[12px] pb-2'>Software developer</h2>
-      <h1 className='text-3xl font-bold px-10'>
+      <h1 className='text-3xl font-bold px-10 font-poppins'>
       <span>{text}</span>
       <Cursor cursorColor='#F7AB0A'/>
       </h1>
