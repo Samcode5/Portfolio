@@ -10,11 +10,12 @@ import { ArrowLeftIcon } from '@heroicons/react/16/solid';
 
 function Projects() {
   const [activeIndex,setActiveIndex]=useState(0);
-  const scrollRef=useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
 
   const handleScroll =()=>{
-    const scrollX=scrollRef.current?.scrollLeft;
-    const width = scrollRef.current?.offsetWidth;
+    const scrollX=scrollRef.current?.scrollLeft || 0;
+    const width = scrollRef.current?.offsetWidth || 0;
     const newIndex = Math.round(scrollX / width);
     setActiveIndex(newIndex);
   }
