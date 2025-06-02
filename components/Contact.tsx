@@ -27,11 +27,11 @@ const handleChange=(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     <span className='underline'>Let&apos;s Talk.</span>
     </h2>
     <div className='flex items-center'>
-    <PhoneIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
+    <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
     <p>sameermudawadkar@gmail.com</p>
     </div>
     <div className='flex items-center'>
-    <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
+    <PhoneIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
     <p>+917588119489</p>
     </div>
     </div>

@@ -26,7 +26,7 @@ export default function ExperienceCard({ title,
         transition={{duration:1}}
         viewport={{once:true}}
         className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center" alt="experience image"/>
-      <div className='px-0 md:px-10'>
+      <div className='px-1 md:px-10'>
         <h4 className='text-4xl font-light '>{title}</h4>
         <p className='font-bold text-2xl mt-1'>{company}</p>
         <div className='flex space-x-2 my-2'>
