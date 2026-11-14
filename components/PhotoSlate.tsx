@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useRef } from "react";
 
 export const takes = [
-  { src: "/me.jpeg", alt: "Portrait of Gautam Mudawadkar", prod: "THE DAY JOB", dir: "G. MUDAWADKAR", next: "TAKE 02: OFF SCREEN ▸",
+  { src: "/me_take1.jpeg", alt: "Portrait of Gautam Mudawadkar", prod: "THE DAY JOB", dir: "G. MUDAWADKAR", next: "TAKE 02: OFF SCREEN ▸",
     style: { objectPosition: "50% 30%" } },
-  { src: "/me_goa.jpg", alt: "Sameer Mudawadkar standing in a restaurant in Goa", prod: "OFF SCREEN", dir: "S. MUDAWADKAR", next: "◂ TAKE 01: THE DAY JOB",
+  { src: "/me_take2.jpeg", alt: "Sameer Mudawadkar standing in a restaurant in Goa", prod: "OFF SCREEN", dir: "S. MUDAWADKAR", next: "◂ TAKE 01: THE DAY JOB",
     style: { objectPosition: "50% 20%", transform: "scale(1.5)", transformOrigin: "50% 22%" } },
 ];
 
