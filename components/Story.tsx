@@ -4,7 +4,7 @@ import PhotoSlate, { takes } from "./PhotoSlate";
 
 const FILM = "https://www.youtube.com/watch?v=nFEA82b1RSw&t=118s";
 
-function Counter({ n, d = 0 }: { n: number; d?: number }) {
+function Counter({ n, d = 0, suffix = "" }: { n: number; d?: number; suffix?: string }) {
   const ref = useRef<HTMLElement>(null);
   const [v, setV] = useState(0);
   useEffect(() => {
@@ -24,7 +24,7 @@ function Counter({ n, d = 0 }: { n: number; d?: number }) {
     io.observe(el);
     return () => { io.disconnect(); cancelAnimationFrame(raf); };
   }, [n]);
-  return <b ref={ref}>{v.toFixed(d)}</b>;
+  return <b ref={ref}>{v.toFixed(d)}{suffix}</b>;
 }
 
 export default function Story() {
@@ -37,10 +37,10 @@ export default function Story() {
           {take === 0 ? (
             <>
               <p>I’m a software developer with a knack for problem-solving and a passion for crafting innovative solutions. I graduated with a Computer Science degree from VIT Pune, and ever since I’ve been on a mission to push my limits, learn new technologies and refine my skills.</p>
-              <p>Today I’m a Senior Software Engineer at Zensar, with 2+ years across frontend, backend and automation, turning hours of manual release work into minutes. I’m now going deeper into LLMs and retrieval-augmented generation, and I’m applying for an MS in Computer Science to strengthen my foundations in machine learning and large-scale systems.</p>
+              <p>Today I’m a Senior Software Engineer at Zensar, with 2+ years across frontend, backend and automation. I’ve always believed that anything done twice should be automated, and that belief is why hours of manual release work now take minutes. I’m now going deeper into LLMs and retrieval-augmented generation, and I’m applying for an MS in Computer Science to strengthen my foundations in machine learning and large-scale systems.</p>
               <div className="stats">
                 <div><Counter n={1950} /><small>engineering hours saved</small></div>
-                <div><Counter n={300} /><small>games on the platform</small></div>
+                <div><Counter n={2} suffix="+" /><small>years of experience</small></div>
                 <div><Counter n={8.85} d={2} /><small>CGPA, B.Tech CS</small></div>
               </div>
             </>
