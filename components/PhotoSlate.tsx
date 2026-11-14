@@ -1,15 +1,16 @@
 "use client";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
-const takes = [
-  { src: "/me_goa.jpg", alt: "Gautam Mudawadkar standing in a restaurant in Goa", style: { objectPosition: "50% 20%", transform: "scale(1.5)", transformOrigin: "50% 22%" } },
-  { src: "/me.jpeg", alt: "Portrait of Gautam Mudawadkar", style: { objectPosition: "50% 30%" } },
+export const takes = [
+  { src: "/me.jpeg", alt: "Portrait of Gautam Mudawadkar", prod: "THE DAY JOB", dir: "G. MUDAWADKAR", next: "TAKE 02: OFF SCREEN ▸",
+    style: { objectPosition: "50% 30%" } },
+  { src: "/me_goa.jpg", alt: "Sameer Mudawadkar standing in a restaurant in Goa", prod: "OFF SCREEN", dir: "S. MUDAWADKAR", next: "◂ TAKE 01: THE DAY JOB",
+    style: { objectPosition: "50% 20%", transform: "scale(1.5)", transformOrigin: "50% 22%" } },
 ];
 
-/** Clapperboard that claps, then "develops" the photo. Click for the next take. */
-export default function PhotoSlate() {
-  const [take, setTake] = useState(0);
+/** Clapperboard that claps, then "develops" the photo. */
+export default function PhotoSlate({ take, onNext }: { take: number; onNext: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const t = takes[take];
 
@@ -28,16 +29,16 @@ export default function PhotoSlate() {
           <div className="stick" />
         </div>
         <div className="board">
-          <div className="row"><span>PROD.</span><b>THE STORY SO FAR</b><span>ROLL</span><b>A</b></div>
+          <div className="row"><span>PROD.</span><b>{t.prod}</b><span>ROLL</span><b>A</b></div>
           <div className="row"><span>SCENE</span><b>01</b><span>TAKE</span><b>{String(take + 1).padStart(2, "0")}</b></div>
-          <div className="row"><span>DIR.</span><b>G. MUDAWADKAR</b><span>CAM</span><b>PUNE</b></div>
+          <div className="row"><span>DIR.</span><b>{t.dir}</b><span>CAM</span><b>PUNE</b></div>
           <div className="shot">
             <Image key={t.src} src={t.src} alt={t.alt} fill sizes="340px" className="dev" style={t.style} priority={take === 0} />
             <i className="flash" key={`f${take}`} />
           </div>
         </div>
       </div>
-      <button className="next" onClick={() => setTake((take + 1) % takes.length)}>NEXT TAKE ▸</button>
+      <button className="next" onClick={onNext}>{t.next}</button>
     </div>
   );
 }

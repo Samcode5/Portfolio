@@ -105,3 +105,7 @@ footer{text-align:center;padding:30px;color:var(--mute);font-size:15px;font-styl
 @keyframes fl{0%{opacity:.85}100%{opacity:0}}
 .next{margin-top:22px;cursor:pointer;background:transparent;color:var(--ivory);padding:10px 26px;border:1px solid var(--brass);font:18px var(--disp);letter-spacing:.2em;transition:.3s}
 .next:hover{background:var(--brass);color:#0b0706}
+.story{animation:swap .9s .2s both}
+@keyframes swap{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.story a{color:var(--brass);text-decoration:none;border-bottom:1px solid var(--brass)}
+.stats.t b{font-size:clamp(28px,3.4vw,46px)}
