@@ -1,42 +1,21 @@
-"use client"
-import React from 'react'
-import {motion} from 'framer-motion'
-import Skill from './Skill'
+import { skills, awards } from "../src/data/content";
 
-
-
-function Skills() {
-  const skills = [
-    { image: "HTML5.png", level: 4 ,directionLeft:true},
-    { image: "CSS3.png", level: 4,directionLeft:true},
-    { image: "js.png", level: 5,directionLeft:false },
-    { image: "react.png", level: 4 ,directionLeft:false},
-    { image: "Tailwind.png", level: 4 ,directionLeft:true},
-    { image: "Git.png", level: 4 ,directionLeft:true},
-    { image: "MySQL.png", level: 4 ,directionLeft:false},
-    { image: "node.png", level: 3,directionLeft:false },
-    { image: "C++.png", level: 4 ,directionLeft:true},
-    { image: "cHash.png", level: 3 ,directionLeft:true},
-    { image: "python.png", level: 3 ,directionLeft:false},
-  ];  
+export default function Skills() {
   return (
-    <motion.div 
-    initial={{opacity:0}}
-    whileInView={{opacity:1}}
-    transition={{duration:1.2}}
-    className='relative min-h-screen flex flex-col text-center items-center justify-center max-w-[2000px] md:text-left xl:flex-row xl:px-10 xl:space-y-0 mx-auto'>
-    <h3 className='absolute top-24 text-gray-500 uppercase tracking-[15px] text-2xl font-semibold '>
-      Skills
-    </h3>
-    <div className='grid grid-cols-4 gap-5 mt-5'>
-      {
-        skills.map((skill,idx)=>(
-          <Skill key={idx} image={skill.image} level={skill.level} directionLeft={skill.directionLeft}/>
-        ))
-      }
-    </div>
-    </motion.div>
-  )
+    <section id="cast">
+      <div className="hd"><h2>Cast &amp; Crew</h2><p>Skills</p></div>
+      <div className="credits">
+        {skills.map(([h, items]) => (
+          <div key={h} className="rv">
+            <h4>{h}</h4>
+            <p>{items.map((s, i) => <span key={s}>{i > 0 && <i>/</i>}{s}</span>)}</p>
+          </div>
+        ))}
+      </div>
+      <div className="aw rv">
+        {awards.map(([a, b]) => <div key={a}><b>{a}</b>{b}</div>)}
+      </div>
+      <p className="edu rv"><b>B.Tech, Computer Science</b>, Vishwakarma Institute of Technology, Pune, 2020–2024. Coursework: Neural Networks, Deep Learning, AI, DBMS, Cloud Computing.</p>
+    </section>
+  );
 }
-
-export default Skills
