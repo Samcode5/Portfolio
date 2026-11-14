@@ -37,7 +37,7 @@ export default function Story() {
           {take === 0 ? (
             <>
               <p>I’m a software developer with a knack for problem-solving and a passion for crafting innovative solutions. I graduated with a Computer Science degree from VIT Pune, and ever since I’ve been on a mission to push my limits, learn new technologies and refine my skills.</p>
-              <p>Today I’m a Senior Software Engineer at Zensar, with 2+ years across frontend, backend and automation. I’ve always believed that anything done twice should be automated, and that belief is why hours of manual release work now take minutes. I’m now going deeper into LLMs and retrieval-augmented generation, and I’m applying for an MS in Computer Science to strengthen my foundations in machine learning and large-scale systems.</p>
+              <p>Today I’m a Senior Software Engineer at Zensar, with 2+ years across frontend, backend and automation. I’ve always believed that anything done twice should be automated, and that belief is why hours of manual release work now take minutes. I’m now going deeper into LLMs and retrieval-augmented generation.</p>
               <div className="stats">
                 <div><Counter n={1950} /><small>engineering hours saved</small></div>
                 <div><Counter n={2} suffix="+" /><small>years of experience</small></div>
