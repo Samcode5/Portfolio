@@ -1,13 +1,11 @@
-import Image from "next/image";
+import PhotoSlate from "./PhotoSlate";
 
 export default function About() {
   return (
     <section id="about">
       <div className="hd"><h2>The Story So Far</h2><p>About</p></div>
       <div className="about">
-        <div className="frame rv">
-          <Image src="/me_goa.jpg" alt="Portrait of Gautam Mudawadkar" fill sizes="340px" />
-        </div>
+        <PhotoSlate />
         <div className="rv">
           <p>I’m a software engineer from Pune with 2+ years building JavaScript applications across frontend, backend and automation. At Zensar I turn slow, manual release work into tools that finish in minutes.</p>
           <p>I’m now going deeper into LLMs and retrieval-augmented generation, and I’m applying for an MS in Computer Science to strengthen my foundations in machine learning and large-scale systems.</p>
